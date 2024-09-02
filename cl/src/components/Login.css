@@ -1,0 +1,67 @@
+body {
+    background-image: url('../components/images/loginbg.webp'); /* Background image */
+    background-size: cover; /* Adjust the size of the image to cover the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.blur-card {
+    backdrop-filter: blur(7px); /* Apply blur effect to the card */
+    background-color: rgba(255, 255, 255, 0.01); /* Semi-transparent background for the card */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+@media (min-width: 576px) {
+    .blur-card {
+        max-width: 400px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .blur-card {
+        width: 90%;
+        margin: 0 5%;
+    }
+    .card-img-top {
+        width: 60px;
+        height: 60px;
+    }
+    h1, h2 {
+        font-size: 1.2rem;
+    }
+    .form-control {
+        font-size: 0.9rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .blur-card {
+        width: 100%;
+        margin: 0;
+        margin-left: 10px;
+        padding: 10px;
+    }
+    .card-img-top {
+        width: 50px;
+        height: 50px;
+    }
+    h1, h2 {
+        font-size: 1rem;
+    }
+    .form-control {
+        font-size: 0.8rem;
+    }
+    .btn {
+        font-size: 0.8rem;
+    }
+}

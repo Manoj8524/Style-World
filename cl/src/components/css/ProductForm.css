@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    background-color: #616161;
+    background: linear-gradient(to right, #e9e9e9, #e7e6e6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+.form-container {
+    display: flex;
+    height: 80vh;
+    width: 70vw;
+}
+
+.image-container {
+    background-image: url('../images/hairsaloon_utencils.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 1.2rem;
+}
+
+.position-fixed {
+    z-index: 1050;
+}
+/* Hide the spinners for number inputs */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* For Firefox */
+}
+
+
+.btn-secondary {
+    background: none;
+    border: none;
+    color: #505050;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.btn-secondary:hover {
+    color: #ff0000e5;
+    background: none;
+}
+
+.btn-add {
+    background-color: #505050;
+    color: white;
+    padding: 10px 20px;
+    width: 30%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add:hover {
+    color: #505050;
+    background-color: transparent;
+    border: 1px solid #505050;
+}
+
+.btn-back {
+    background-color: transparent;
+    border: 1px solid #505050;
+    color: #505050;
+    padding: 10px 20px;
+    width: 30%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #505050;
+    color: white;
+}
+
+/* Medium Devices (Tablets, 768px and up) */
+@media (max-width: 768px) {
+    
+
+    .form-container {
+        height: auto;
+        padding: 20px;
+        width: 90vw;
+        flex-direction: column;
+    }
+
+    .btn-add, .btn-back {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Small Devices (Phones, 600px and down) */
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: auto;
+    }
+
+    .form-container {
+        width: 100vw;
+       
+    }
+
+    .btn-add, .btn-back {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+
+/* Extra Small Devices (300px and down) */
+@media (max-width: 300px) {
+    h1 {
+        font-size: 0.8rem;
+    }
+
+    .btn-add, .btn-back {
+        padding: 5px;
+        font-size: 12px;
+    }
+}

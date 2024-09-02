@@ -1,0 +1,48 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --card-background: rgba(237, 148, 93, 0.1);
+    --button-background: #f23d0b;
+    --button-text-color: #ffffff;
+    --input-background: #ffffff;
+    --input-border: #ccc;
+  }
+  
+  [data-theme='dark'] {
+    --background-color: #212121;
+    --text-color: #ffffff;
+    --card-background: rgba(255, 255, 255, 0.1);
+    --button-background: #ff7e5f;
+    --button-text-color: #212121;
+    --input-background: #333333;
+    --input-border: #555555;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  .loading-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .loading-animation:before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top-color: #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
