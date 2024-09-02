@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import router from "./Routes/userRoutes.js"; // Ensure this path is correct
-import connectionDB from "./Connection/conn.js"; // Ensure this path is correct
+import connectionDB from "./Connection/Conn.js"; // Ensure this path is correct
 
 dotenv.config();
 const PORT = process.env.PORT || 5001;
