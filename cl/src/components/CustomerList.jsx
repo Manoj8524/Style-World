@@ -9,7 +9,7 @@ const CustomerList = () => {
   useEffect(() => {
     const fetchCustomers = async () => {
       try {
-        const { data } = await axios.get('http://localhost:5000/api/customers');
+        const { data } = await axios.get('https://style-world.onrender.com/api/customers');
         setCustomers(data);
       } catch (error) {
         console.error('Error fetching customers:', error);

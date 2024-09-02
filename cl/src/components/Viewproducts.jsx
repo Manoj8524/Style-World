@@ -12,7 +12,7 @@ const ViewProducts = () => {
 
   const getData = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/getproducts");
+      const response = await axios.get("https://style-world.onrender.com/api/getproducts");
       setData(response.data);
     } catch (error) {
       console.error("Error fetching data", error);
@@ -66,7 +66,7 @@ const ViewProducts = () => {
   };
 
   const handleDelete = (id) => {
-    axios.delete("http://localhost:5000/api/deleteproduct", {
+    axios.delete("https://style-world.onrender.com/api/deleteproduct", {
       params: { id }
     }).then(res => {
       if (res.data.status === 200) {
