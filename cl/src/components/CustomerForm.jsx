@@ -24,7 +24,7 @@ const CustomerForm = () => {
 
   const getData = async () => {
     try {
-      const response = await axios.get("https://style-world-omega.vercel.app/api/getproducts");
+      const response = await axios.get("https://style-world.onrender.com/api/getproducts");
       setData(response.data);
     } catch (error) {
       console.error("Error fetching data", error);

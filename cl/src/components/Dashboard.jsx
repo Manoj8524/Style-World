@@ -28,7 +28,7 @@ const CustomerDashboard = () => {
 
   const getData = async () => {
     try {
-      const response = await axios.get("https://style-world-omega.vercel.app/api/getbookings");
+      const response = await axios.get("https://style-world.onrender.com/api/getbookings");
       setData(response.data);
       setTotalCustomers(response.data.length);
     } catch (error) {
@@ -38,7 +38,7 @@ const CustomerDashboard = () => {
 
   const getTodayBooking = async () => {
     try {
-      const response = await axios.get("https://style-world-omega.vercel.app/api/gettodaybooking");
+      const response = await axios.get("https://style-world.onrender.com/api/gettodaybooking");
       const count = response.data.reduce((acc, booking) => (booking.productname ? acc + 1 : acc), 0);
       setTodayBookingCount(count);
     } catch (error) {
