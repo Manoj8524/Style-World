@@ -30,7 +30,7 @@ const Login = () => {
             return;
         }
         try {
-            const res = await axios.get('https://style-world.onrender.com/api/userlogin/', {
+            const res = await axios.get('https://style-world-omega.vercel.app/api/userlogin/', {
                 params: {
                     email: username,
                     password: password

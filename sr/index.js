@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5001;
 const app = express();
 
 app.use(cors({
-  origin: ["https://style-world-kappa.vercel.app"],
+  origin: ["https://style-world-omega.vercel.app"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));

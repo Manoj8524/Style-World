@@ -13,7 +13,7 @@ const ViewCustomers = () => {
 
   const getData = async () => {
     try {
-      const response = await axios.get("https://style-world.onrender.com/api/getbookings");
+      const response = await axios.get("https://style-world-omega.vercel.app/api/getbookings");
       setData(response.data);
     } catch (error) {
       console.error("Error fetching data", error);
@@ -132,7 +132,7 @@ const ViewCustomers = () => {
                   onClick={() => {
                     axios
                       .delete(
-                        "https://style-world.onrender.com/api/deletecustomerbooking",
+                        "https://style-world-omega.vercel.app/api/deletecustomerbooking",
                         { params: { id: e._id } }
                       )
                       .then(res => {

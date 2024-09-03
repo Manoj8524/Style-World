@@ -2,7 +2,7 @@
 import axios from "axios";
 
 // Common base URL from environment or default
-const BASE_URL = "https://style-world.onrender.com/api";
+const BASE_URL = "https://style-world-omega.vercel.app/api";
 
 // Customer API calls
 const CUSTOMER_API_URL = `${BASE_URL}/addcustomer`;
