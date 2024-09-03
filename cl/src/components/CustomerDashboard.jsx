@@ -91,6 +91,7 @@ const CustomerDashboard = () => {
     searchText === "" || Object.values(val).some(field => 
       field.toString().toLowerCase().includes(searchText.toLowerCase())
     )
+    
   );
 
   const getRowClassName = (params) => {
